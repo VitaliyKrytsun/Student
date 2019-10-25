@@ -1,19 +1,8 @@
-n = int(input('Введіть число:'))
-c = n
-h = n
-x = n
-#print(bin(n))
-#print(bin(int(input()))[2:])
-b = ''                  # Перевід в бінапну систему
-while n > 0:
-    b = str(n % 2) + b
-    n = n // 2
+n = int(input("Введіть число:"))
 
-a = ''                  # Перевід в 8 систему
-while h > 0:
-     a = str(h % 8) + a
-     h = h // 8
-
-d = hex(x)
- 
-print('dec'+ '    '+ 'bin'+'       '+'oct'+'   '+'hex'+"\n" + str(c)+'     '+str(b) +'     '+ str(a)+'    '+str(d)) 
+b = str('bin')
+h = str('hex')
+o = str('oct')
+d = str('dec')
+print(f'{b:>20}{o:>20}{d:>20}{h:>20}')
+print(f'{n:>20b}{n:>20o}{n:>20}{n:>20x}')
