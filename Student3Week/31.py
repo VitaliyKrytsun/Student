@@ -1,11 +1,11 @@
-n = int(input('Введіть число:'))
 
-def chisla():
+
+def chisla(n):
+    a = []
     for i in range(n + 1):
-        a = []
+        
         a.append(i)
-    a[1] = 0
-    i = 2
+        i = 2
     while i <= n:
         if a[i] != 0:
             j = i + i
@@ -18,4 +18,5 @@ def chisla():
     a = set(a)
     a.remove(0)
     print(a)
-chisla()
+n = int(input('Введіть число:'))
+chisla(n)
